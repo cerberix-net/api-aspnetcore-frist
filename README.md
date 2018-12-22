@@ -99,4 +99,4 @@ To install, run the following `git` command:
 ![](img/orb.jpg)
  
 <a name="2"></a>
-2. Hangfire supports a wide variety of persistent storage providers: [Sql Server](http://docs.hangfire.io/en/latest/configuration/using-sql-server.html) & [Redis](http://docs.hangfire.io/en/latest/configuration/using-redis.html) to name a few. This configuration exercise is outside the scope of module.
+2. Hangfire supports other storage providers: [Sql Server](http://docs.hangfire.io/en/latest/configuration/using-sql-server.html) & [Redis](http://docs.hangfire.io/en/latest/configuration/using-redis.html) to name a few. This configuration exercise is outside the scope of module.
