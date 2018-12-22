@@ -96,7 +96,7 @@ To install, run the following `git` command:
 <a name="1"></a>
 1. This command will pull the module changes directly into your working branch.
 
-![](https://pbs.twimg.com/media/DAX73pVUIAAYPz1.jpg)
+![](img/orb.jpg)
  
 <a name="2"></a>
 2. Hangfire supports a wide variety of persistent storage providers: [Sql Server](http://docs.hangfire.io/en/latest/configuration/using-sql-server.html) & [Redis](http://docs.hangfire.io/en/latest/configuration/using-redis.html) to name a few. This configuration exercise is outside the scope of module.
