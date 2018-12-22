@@ -94,9 +94,9 @@ To install, run the following `git` command:
 ### Footnotes
 
 <a name="1"></a>
-[1] This command will pull the module changes directly into your working branch.
+1. This command will pull the module changes directly into your working branch.
 
 ![](https://pbs.twimg.com/media/DAX73pVUIAAYPz1.jpg)
  
 <a name="2"></a>
-[2] Hangfire supports a wide variety of storage providers: [Sql Server](http://docs.hangfire.io/en/latest/configuration/using-sql-server.html), [Redis](http://docs.hangfire.io/en/latest/configuration/using-redis.html), & MSMQ() to name a few. This configuration exercise is outside the scope of README.
+2. Hangfire supports a wide variety of persistent storage providers: [Sql Server](http://docs.hangfire.io/en/latest/configuration/using-sql-server.html) & [Redis](http://docs.hangfire.io/en/latest/configuration/using-redis.html) to name a few. This configuration exercise is outside the scope of module.
