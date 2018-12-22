@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using Hangfire;
+using Hangfire.MemoryStorage;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -19,6 +21,9 @@ namespace Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            // @pacjman: https://jonhilton.net/simple-background-jobs-with-hangfire-and-aspnet-core/
+            services.AddHangfire(svc => svc.UseMemoryStorage());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -28,6 +33,10 @@ namespace Api
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            // @pacjman: https://jonhilton.net/simple-background-jobs-with-hangfire-and-aspnet-core/
+            app.UseHangfireDashboard();
+            app.UseHangfireServer();
 
             app.UseMvc();
         }
